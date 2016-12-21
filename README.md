@@ -27,20 +27,26 @@ The input will always be a valid time between '00:00' and '23:59'.
 > npm install
 ```
 
-## How to run unit tests and verification tests
+## How to run unit tests (Jasmine)
 
 ```shell
 > npm test
 ```
 
-## How to run jasmine unit tests (no verify)
+## How to verification tests
 
 ```shell
-> npm run test:unit
+> npm start
 ```
 
-## How to verification tests only
+## How to run unit tests every time a file is changed
 
 ```shell
-> npm run verify
+> npm run test:watch
+```
+
+## How to run verification tests every time a file is changed
+
+```shell
+> npm run start:watch
 ```
