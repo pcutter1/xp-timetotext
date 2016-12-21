@@ -1,0 +1,19 @@
+{
+  "name": "time2text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "time2text.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:watch": "nodemon ./bin/www",
+    "tdd": "nodemon --watch ./ --exec 'NODE_ENV=test JASMINE_CONFIG_PATH=test/unit/jasmine.json jasmine' --delay 1 ./bin/www",
+    "test": "npm run test:unit && npm run verify",
+    "test:unit": "NODE_ENV=test JASMINE_CONFIG_PATH=test/unit/jasmine.json jasmine",
+    "verify": "node checker.js test_data.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
+}
