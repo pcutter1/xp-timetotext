@@ -7,7 +7,7 @@ console.log('Testing money2text ...')
 
 const failedTests = testData
   .filter((item) => {
-    item.actual = money2text(item.time)
+    item.actual = money2text(item.amount)
     return item.text !== item.actual
   })
   .map((item) => {
