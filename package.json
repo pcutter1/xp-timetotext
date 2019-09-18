@@ -4,14 +4,11 @@
   "description": "Create a function (time2text) that converts time strings (formatted as 'HH:MM') to human readable text",
   "main": "time2text.js",
   "scripts": {
-    "start": "node test/verify.js",
-    "start:watch": "nodemon test/verify.js",
-    "test": "NODE_ENV=test JASMINE_CONFIG_PATH=test/unit/jasmine.json jasmine",
-    "test:watch": "nodemon --watch ./ --exec 'NODE_ENV=test JASMINE_CONFIG_PATH=test/unit/jasmine.json jasmine' --delay 1 ./bin/www"
+    "test:time": "node test/verify.js",
+    "test:money": "node test/verify2.js",
+    "start:watch": "nodemon test/verify.js"
   },
   "author": "",
   "license": "UNLICENSED",
-  "devDependencies": {
-    "jasmine": "^2.5.2"
-  }
+  "devDependencies": {}
 }

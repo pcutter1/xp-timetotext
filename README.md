@@ -21,22 +21,10 @@ The input will always be a valid time between '00:00' and '23:59'.
 - Consider combinations of the above rules (e.g. '11:55' should result in 'five to noon'). 
 - The full hour should say "o'clock" (e.g. 16:00 should result in 'four o'clock in the afternoon').
 
-## How to insta ll
+## How to run verification tests
 
 ```shell
-> npm install
-```
-
-## How to run unit tests (Jasmine)
-
-```shell
-> npm test
-```
-
-## How to verification tests
-
-```shell
-> npm start
+> npm run test:time
 ```
 
 ## How to run unit tests every time a file is changed
@@ -49,4 +37,18 @@ The input will always be a valid time between '00:00' and '23:59'.
 
 ```shell
 > npm run start:watch
+```
+
+## OPTIONAL: Pass the tests for the money 2 text converter
+
+## Goal
+
+The goal is to develop a money-2-text converter function (money2text) that
+converts money (USD) (formatted as '10000.00') to human readable text so that a
+virtual assistants such as Siri can read the text to our blind users.
+
+## How to run verification tests
+
+```shell
+> npm run test:money
 ```
